@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div  class="select-container">
+        <select id="mes" class="select-style">
+            <option value="01">Enero</option>
+            <option value="02">Febrero</option>
+            <option value="03">Marzo</option>
+            <option value="04">Abril</option>
+            <option value="05">Mayo</option>
+            <option value="06">Junio</option>
+            <option value="07">Julio</option>
+            <option value="08">Agosto</option>
+            <option value="09">Setiembre</option>
+            <option selected value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+        </select>
+      
+        <select id="anio" class="select-style">
+          <option value="2023">2023</option>
+          <option value="2022">2022</option>
+        </select>
+      
+        <button id="filtrar" class="filtrar-button">Filtrar</button>
+    </div>
+  <div class="render-full">
+    <div class="chart-container">
+        <div class="grafico" id="grafico-container">
+
+        </div>
+    </div>
+  </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>

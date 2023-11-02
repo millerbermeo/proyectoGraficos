@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  src: url('../fonts/Poppins-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.select-container {
+  display: flex;
+  width: 40%;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.select-container select {
+  padding: 10px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+}
+
+.select-container button {
+  width: 100px;
+}
+
+.detalles>p {
+  font-size: 15px;
+}
+
+.detalles>p>span {
+  font-size: 10px;
+}
+
+/* Estilos para el botón */
+.filtrar-button {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.datos-cantidad {
+  padding-top: 50px;
+  /* border: 1px solid gray; */
+  /* background-color: #3498db; */
+  transform: translateX(-20px);
+}
+
+.render-full {
+  margin-top: 100px;
+}
+
+.grafico {
+  width: 90%;
+}
+
+.datos-cantidad>* {
+  padding-top: 100px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 4px;
+  /* transform: translateX(-100px); */
+}
+
+.mensaje {
+  width: 250px;
+  word-wrap: break-word;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.mensaje.active {
+  visibility: visible;
+}
+
+/* IMPOOERTANTE */
+
+.conjunto-grafico-datos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 10px;
+  width: 250px;
+}
+
+
+
+/* IMPOOERTANTE */
+
+
+.detalles {
+  padding-left: 20px;
+  margin-top: 10px;
+  height: 200px;
+}
+
+.detalles>* {
+  margin-top: 10px;
+}
+
+.detalles {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-10px);
+}
+
+
+.detalles>h3 {
+  font-weight: 600;
+  font-size: 15px;
+  color: #000000;
+}
+
+.detalles>p {
+  font-size: 14px;
+  text-align: justify;
+}
+
+
+.btn-1 {
+  width: 130px;
+  padding: 10px 20px;
+  background-color: #4c59af;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-1:hover {
+  background-color: #45a049;
+  color: #f0f0f0;
+}
+
+.btn-1:active {
+  background-color: #3e8e41;
+}
